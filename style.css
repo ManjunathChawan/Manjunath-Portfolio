@@ -1,0 +1,445 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #333 40%, #555);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before,
+header::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header::before {
+    top: -50px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+}
+
+header::after {
+    bottom: -50px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+}
+
+header .header-content {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 7px solid #fff;
+    margin-bottom: 20px;
+}
+
+/* Nav Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to right, #0077b5, #4a90e2);
+    border-radius: 10px;
+    color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+}
+
+/* Right: Name and Contact */
+.banner-right h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.banner-right h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.banner-right p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-icons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Skills Section */
+.skills-section {
+    background: url('https://www.transparenttextures.com/patterns/clean-gray-paper.png'), linear-gradient(135deg, #f0f0f0, #d6d6d6);
+    background-size: cover;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 30px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.skill ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .skill {
+        width: 100%;
+    }
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    text-align: left;
+}
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+/* Projects Section */
+.projects-section {
+    background: linear-gradient(135deg, #fafafa 40%, #ededed);
+}
+
+.project-card {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.project-card .button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-card .button:hover {
+    background-color: #555;
+}
+
+/* Resume Section */
+.resume-section {
+    background: url('https://www.transparenttextures.com/patterns/lined-paper-2.png'), linear-gradient(135deg, #fff, #f0f0f0);
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.resume-section .button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resume-section .button:hover {
+    background-color: #555;
+}
+
+#resume {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.resume-container {
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+
+/* General Contact Section Styles */
+#contact {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Contact Details */
+.contact-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-details li {
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.contact-details li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.contact-details li a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.contact-form button {
+    background-color: #007bff;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    .contact-details,
+    .contact-form {
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header h2 {
+        font-size: 1.4rem;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
